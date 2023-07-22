@@ -130,11 +130,12 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    -- Theme
+    'catppuccin/nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      flavour = "macchiato"
+      vim.cmd.colorscheme 'catppuccin'
     end,
   },
 

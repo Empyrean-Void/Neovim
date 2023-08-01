@@ -2,7 +2,7 @@
 
 Neovim configuration files
 
-**A big thank you to ![TJ](https://github.com/tjdevries), kickstart is awesome!** 
+**A big thank you to ![TJ](https://github.com/tjdevries) kickstart is awesome!** 
 
 ## Install
 

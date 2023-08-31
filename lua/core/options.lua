@@ -1,63 +1,40 @@
--- Globals
+-- Set leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-local set = vim.o
+-- Set highlight on search
+vim.o.hlsearch = false
 
--------------
--- General --
--------------
+-- Make line numbers default
+vim.wo.number = true
 
--- Line numbers
-set.number = true
-set.relativenumber = true
+-- Enable mouse mode
+vim.o.mouse = 'a'
 
--- Swap file
-set.swapfile = false
+-- Sync clipboard between OS and Neovim.
+--  Remove this option if you want your OS clipboard to remain independent.
+--  See `:help 'clipboard'`
+vim.o.clipboard = 'unnamedplus'
 
--- Update time
-set.updatetime = 250
+-- Enable break indent
+vim.o.breakindent = true
 
--- Encoding
-set.encoding = 'utf-8'
-set.fileencoding = 'utf-8'
+-- Save undo history
+vim.o.undofile = true
 
--- Indent
-set.smartindent = true
-set.smarttab = true
-set.tabstop = 2
-set.expandtab = true
-set.shiftwidth = 2
+-- Case-insensitive searching UNLESS \C or capital in search
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
--- Clipboard
-set.clipboard = 'unnamedplus'
+-- Keep signcolumn on by default
+vim.wo.signcolumn = 'yes'
 
--- Search
-set.incsearch = true
-set.ignorecase = true
-set.smartcase = true
+-- Decrease update time
+vim.o.updatetime = 250
+vim.o.timeoutlen = 300
 
--- Mouse
-set.mouse = 'a'
+-- Set completeopt to have a better completion experience
+vim.o.completeopt = 'menuone,noselect'
 
--- Shell
-set.shell = '/usr/bin/zsh'
-
--- Appearance
-set.termguicolors = true
-set.background = 'dark'
-
--- Scrolloff
-set.scrolloff = 5
-
--- Cursor
-set.cursorline = true
-
------------
--- Other --
------------
-set.hidden = true
-set.timeoutlen = 300
-set.lazyredraw = true
-set.synmaxcol = 240
-set.updatetime = 250
+-- NOTE: You should make sure your terminal supports this
+vim.o.termguicolors = true

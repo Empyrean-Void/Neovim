@@ -2,8 +2,6 @@
 
 Neovim configuration files
 
-**A big thank you to ![TJ](https://github.com/tjdevries) kickstart is awesome!** 
-
 ## Install
 
 **Backup any existing configs:**
@@ -21,3 +19,7 @@ $ mv ~/.local/share/nvim/ ~/.local/share/nvim.old/
 ```
 $ git clone https://github.com/Empyrean-Void/Neovim.git ~/.config/nvim/
 ```
+
+## Configuration
+
+Most configuration is done in the lua directory and the init.lua is only used to load the config files.

@@ -46,4 +46,4 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 -- Spell checking
-vim.o.spell = true
+vim.o.spell = false
